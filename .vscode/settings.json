@@ -1,0 +1,15 @@
+{
+    "eslint.enable": true,
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnType": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.words": [
+      "cloudinary"
+    ]
+  }

@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run commitlint with edit flag and show message
+npx --no -- commitlint --edit "${1}" || {
+  echo >&2 "-----------------------------------------------------------------"
+  echo >&2 "  ERROR: Your commit message does not meet the required format."
+  echo >&2 "  Please make sure your commit message follows the conventions."
+  echo >&2 "  For guidelines, refer to the project's CONTRIBUTING.md file."
+  echo >&2 "-----------------------------------------------------------------"
+  exit 1
+}
